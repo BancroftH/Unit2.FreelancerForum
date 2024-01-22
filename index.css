@@ -1,0 +1,8 @@
+li {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+}
+
+#freelancerList > li {
+    flex: content;
+}
