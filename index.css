@@ -1,8 +1,22 @@
-li {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+title {
+    font-family: sans-serif;
+    font-size: larger;
+    color: black;
+    margin: 50px;
+    justify-content: center;
+}
+h3 {
+    font-family: sans-serif;
+    font-size: smaller;
+}
+
+
+div {
+    font-family: sans;
     color: black;
 }
 
-#freelancerList > li {
+#freelancerList > div {
     flex: content;
+    align-items: center;
 }

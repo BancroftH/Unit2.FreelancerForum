@@ -7,9 +7,8 @@ const freelancers = [
   { name: "Dr. Webb", price: 24, occupation: "Telescope" },
   { name: "Prof. Hubbard", price: 76, occupation: "Biochemist" },
 ];
-
-// Max number of freelancers that can be listed.
 const maxFreelancers = 12;
+// Max number of freelancers that can be listed.
 
 // 
 const addFreelanceIntervalID = setInterval(addFreelancer, 1000);
@@ -18,13 +17,13 @@ render();
 
 // Function that will render the list of freelancers and associated price and occupation to user.
 function render() {
-  const freelancerList = document.querySelector("#freelancerList");
-  const listElements = freelancers.map((freelancer) => {
-    const element = document.createElement("li");
+  const freelancersList = document.querySelector("#freelancersList");
+  const freelancersElements = freelancers.map((freelancer) => {
+    const element = document.createElement("div");
     element.classList.add(freelancer.freelancers);
     return element;
   });
-//   freelancerList.replaceChildren(...freelancersElements);
+  // freelancers.replaceChildren(...freelancersElements);
 }
 
 function addFreelancer() {
@@ -34,9 +33,6 @@ function addFreelancer() {
   }
   freelancers.push({freelancer, name: ""})
 }
-
-// Max number of freelancers that can be listed.
-
 
 
 
