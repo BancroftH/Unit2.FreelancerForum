@@ -19,7 +19,7 @@ render();
 function render() {
   const freelancersList = document.querySelector("#freelancersList");
   const freelancersElements = freelancers.map((freelancer) => {
-    const element = document.createElement("div");
+    const element = document.createElement("ul");
     element.classList.add(freelancer.freelancers);
     return element;
   });
